@@ -44,7 +44,10 @@
   font-family: "Open Sans", sans-serif;
   font-size: 14px;
   color: #63c5da;
+  text-align: right;
+  margin-top: -22px;
 }
+
 
 .titulo {
   font-style: italic;
