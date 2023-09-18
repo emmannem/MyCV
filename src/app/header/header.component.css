@@ -1,0 +1,83 @@
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  border-bottom: 2px solid #63c5da; /* Agrega una línea de 2px de grosor con el color deseado */
+  position: relative; /* Para que el elemento con posición absoluta sea relativo a este contenedor */
+}
+
+.black-box {
+  background-color: #000; /* Color de fondo negro */
+  width: 30px; /* Ancho del recuadro negro  */
+  height: 50px; /* Alto del recuadro negro  */
+  position: absolute; /* Posición absoluta para superponerlo en la esquina superior izquierda */
+  top: 28px; /* Alinear en la parte superior */
+  left: 0; /* Alinear en la parte izquierda */
+  z-index: 1; /* Asegura que esté en la parte superior */
+}
+
+.left,
+.center,
+.right {
+  flex: 1;
+  margin-left: 35px; /* Ajusta este valor según la cantidad de espacio que desees entre el black-box y el contenido */
+}
+
+.left h1 {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 30px;
+  margin-bottom: 0px;
+  margin: 0%;
+}
+
+.left .titulos {
+  margin: 0;
+  margin-top: 0%;
+  font-family: "Open Sans", sans-serif;
+  color: #63c5da;
+}
+
+.left .mision {
+  font-family: "Open Sans", sans-serif;
+  font-size: 12px;
+  text-align: justify;
+  margin: 0;
+  margin-top: 25px;
+  padding: 0;
+}
+
+.center {
+  display: flex;
+  justify-content: center; /* Centrar horizontalmente */
+  align-items: center; /* Centrar verticalmente */
+}
+
+.center img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 50%;
+  border: 2px solid #63c5da;
+  border-style: groove;
+}
+
+.right {
+  text-align: right; /* Alinea el texto a la derecha */
+}
+
+.right ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.right li {
+  display: flex; /* Hace que el contenido se comporte como flexbox */
+  align-items: center; /* Centra verticalmente el contenido en el <li> */
+  justify-content: flex-end; /* Alinea el contenido a la derecha del <li> */
+  margin-bottom: 10px;
+}
+
+.right li svg {
+  margin-left: 8px; /* Espacio entre el texto y el icono */
+}
