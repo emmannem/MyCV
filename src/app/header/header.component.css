@@ -63,6 +63,8 @@
 
 .right {
   text-align: right; /* Alinea el texto a la derecha */
+  font-family: "Open Sans", sans-serif;
+  font-size: 12px;
 }
 
 .right ul {
