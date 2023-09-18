@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { CertificadosService } from '../services/certificados.service';
 
 @Component({
@@ -6,7 +6,7 @@ import { CertificadosService } from '../services/certificados.service';
   templateUrl: './certificados.component.html',
   styleUrls: ['./certificados.component.css'],
 })
-export class CertificadosComponent {
+export class CertificadosComponent implements OnInit {
   certificados: Array<any> = [];
   constructor(private certificadoService: CertificadosService) {}
 
