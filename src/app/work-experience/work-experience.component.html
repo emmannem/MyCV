@@ -1,1 +1,28 @@
-<p>work-experience works!</p>
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&family=Open+Sans:wght@400;500&family=Ubuntu&display=swap"
+    rel="stylesheet"
+  />
+</head>
+
+<div class="work-experience-container">
+  <h2>EXPERIENCIA LABORAL</h2>
+  <ng-container *ngFor="let experiencia of workInfo">
+    <div class="experiencia-item">
+      <h3>{{ experiencia.puesto }}</h3>
+      <p class="empresa">{{ experiencia.empresa }}</p>
+      <p class="fechas">
+        {{ experiencia.fecha_ini }} - {{ experiencia.fecha_fin }}
+      </p>
+      <p class="ubicacion">{{ experiencia.ciudad }}, {{ experiencia.pais }}</p>
+      <p class="titulo">Logros</p>
+      <ul class="logros-list">
+        <li *ngFor="let logro of experiencia.logros">
+          <p class="lista">{{ logro.logro }}</p>
+        </li>
+      </ul>
+    </div>
+  </ng-container>
+</div>
