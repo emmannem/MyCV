@@ -1,0 +1,46 @@
+.skills-container {
+  padding: 0;
+  margin-top: 0;
+}
+
+.skills-container h2 {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+
+.skills-list {
+  list-style: none;
+  padding: 0;
+}
+
+.skill-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 5px;
+  font-family: "Open Sans", sans-serif;
+  font-size: 12px;
+  margin: 0;
+}
+
+.skill-bar {
+  background-color: #ccc;
+  width: 100%;
+  height: 10px;
+  border-radius: 5px;
+  position: relative;
+  margin-top: 0px;
+}
+
+.skill-fill {
+  height: 100%;
+  border-radius: 5px;
+  background-color: #63c5da; /* Color de relleno */
+}
+
+.skill-name {
+  margin: 0;
+  margin-bottom: 5px;
+  margin-top: 5px;
+}
