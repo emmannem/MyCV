@@ -1,0 +1,15 @@
+.cv-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Alinea el contenido horizontalmente en el centro */
+}
+
+.cv-content {
+  display: flex;
+  flex-wrap: wrap; /* Permite que los componentes se envuelvan en filas adicionales si no caben en una sola fila */
+  justify-content: space-around; /* Espacio uniforme entre los componentes */
+  width: 100%; /* Ancho completo del contenedor */
+  max-width: 1200px; /* Ancho máximo para evitar que el contenido se extienda demasiado */
+}
+
+/* Estilos adicionales para cada componente si es necesario */
