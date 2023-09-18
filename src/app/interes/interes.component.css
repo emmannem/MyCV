@@ -1,0 +1,42 @@
+.intereses-container {
+  padding: 0px;
+  margin-top: 0px;
+}
+
+.intereses-container h2 {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 22px;
+  margin-bottom: 2px;
+  margin-top: 0px;
+}
+
+.column-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.intereses-list {
+  list-style: none;
+  padding: 0;
+  flex: 1; /* Distribuye el espacio de manera equitativa entre ambas columnas */
+  width: 50%; /* Cada columna ocupa el 50% del espacio disponible */
+}
+
+/* Establece un espacio entre el icono y el texto */
+.intereses-list li {
+  display: flex;
+  align-items: center; /* Alinea verticalmente el contenido */
+  font-family: "Open Sans", sans-serif;
+  font-size: 12px;
+  margin-bottom: 10px;
+}
+
+/* Establece el espacio entre el icono y el texto */
+.intereses-list svg {
+  margin-right: 8px; /* Ajusta la cantidad de espacio según tu preferencia */
+}
+
+/* Establece un espacio uniforme entre el icono y el texto */
+.intereses-text {
+  margin-left: 8px; /* Puedes ajustar el espacio según tu preferencia */
+}
