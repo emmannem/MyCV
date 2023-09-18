@@ -1,0 +1,16 @@
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&family=Open+Sans:wght@400;500&family=Ubuntu&display=swap"
+    rel="stylesheet"
+  />
+</head>
+<div class="certificados-container">
+  <h2>CERTIFICADOS</h2>
+  <div *ngFor="let certificado of certificados" class="certificado-item">
+    <h3>{{ certificado.nombre }}</h3>
+    <p class="año">{{ certificado.anio }}</p>
+    <p class="descripción">{{ certificado.descripcion }}</p>
+  </div>
+</div>

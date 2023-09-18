@@ -7,9 +7,16 @@ import { WorkExperienceComponent } from './work-experience/work-experience.compo
 
 import { HttpClientModule } from '@angular/common/http';
 import { SkilsComponent } from './skils/skils.component';
+import { CertificadosComponent } from './certificados/certificados.component';
 
 @NgModule({
-  declarations: [AppComponent, HeaderComponent, WorkExperienceComponent, SkilsComponent],
+  declarations: [
+    AppComponent,
+    HeaderComponent,
+    WorkExperienceComponent,
+    SkilsComponent,
+    CertificadosComponent,
+  ],
   imports: [BrowserModule, HttpClientModule],
   providers: [],
   bootstrap: [AppComponent],
