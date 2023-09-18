@@ -1,15 +1,23 @@
 .cv-container {
   display: flex;
   flex-direction: column;
-  align-items: center; /* Alinea el contenido horizontalmente en el centro */
+  align-items: center;
+  padding: 20px;
 }
 
 .cv-content {
   display: flex;
-  flex-wrap: wrap; /* Permite que los componentes se envuelvan en filas adicionales si no caben en una sola fila */
-  justify-content: space-around; /* Espacio uniforme entre los componentes */
-  width: 100%; /* Ancho completo del contenedor */
-  max-width: 1200px; /* Ancho máximo para evitar que el contenido se extienda demasiado */
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width: 100%;
+  max-width: 1200px;
+  margin-top: 20px; /* Añadimos un margen superior para separar los componentes */
 }
 
 /* Estilos adicionales para cada componente si es necesario */
+
+/* Estilos específicos para app-skills */
+app-skills {
+  flex: 1; /* Hacemos que app-skills ocupe el espacio restante horizontalmente */
+  max-width: 400px; /* Limitamos el ancho máximo para evitar que se extienda demasiado */
+}
