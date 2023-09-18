@@ -3,6 +3,8 @@
   flex-direction: column;
   align-items: center;
   padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .cv-content {
@@ -10,14 +12,12 @@
   flex-wrap: wrap;
   justify-content: space-around;
   width: 100%;
-  max-width: 1200px;
-  margin-top: 20px; /* Añadimos un margen superior para separar los componentes */
 }
 
-/* Estilos adicionales para cada componente si es necesario */
-
-/* Estilos específicos para app-skills */
-app-skills {
-  flex: 1; /* Hacemos que app-skills ocupe el espacio restante horizontalmente */
-  max-width: 400px; /* Limitamos el ancho máximo para evitar que se extienda demasiado */
+.component-container {
+  flex-basis: calc(
+    50% - 20px
+  ); /* Calcula el 50% del ancho menos el espacio entre componentes */
+  margin: 10px; /* Espacio entre componentes */
+  box-sizing: border-box;
 }

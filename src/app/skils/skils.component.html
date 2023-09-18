@@ -7,10 +7,15 @@
   />
 </head>
 <div class="skills-container">
-  <h2>HABILIDADES</h2>
+  <h2>HABILIDADES Y COMPETENCIAS</h2>
   <ul class="skills-list">
     <li *ngFor="let skill of habilidades">
-      {{ skill.skil }}
+      <div class="skill-item">
+        <p class="skill-name">{{ skill.skil }}</p>
+      </div>
+      <div class="skill-bar">
+        <div class="skill-fill" [style.width.%]="skill.Porcentaje"></div>
+      </div>
     </li>
   </ul>
 </div>
