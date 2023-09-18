@@ -15,9 +15,12 @@
 }
 
 .component-container {
-  flex-basis: calc(
-    50% - 20px
-  ); /* Calcula el 50% del ancho menos el espacio entre componentes */
-  margin: 10px; /* Espacio entre componentes */
+  flex-basis: calc(50% - 20px);
+  margin: 10px;
   box-sizing: border-box;
+}
+
+.column-container {
+  display: flex;
+  flex-direction: column; /* Establece la dirección de los elementos a una columna */
 }
