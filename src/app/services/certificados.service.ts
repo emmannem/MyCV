@@ -9,7 +9,7 @@ import { BehaviorSubject } from 'rxjs/';
 })
 export class CertificadosService {
   constructor(private readonly http: HttpClient) {}
-  apiURL = 'http://localhost:8080/certificates';
+  apiURL = 'https://node-apicv-service-emmannem.cloud.okteto.net/certificates';
   //http opcions
 
   httpOpcions = {

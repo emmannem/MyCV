@@ -9,7 +9,7 @@ import { BehaviorSubject } from 'rxjs';
 })
 export class SkilsService {
   constructor(private http: HttpClient) {}
-  apiURL = 'http://localhost:8080/skils';
+  apiURL = 'https://node-apicv-service-emmannem.cloud.okteto.net/skils';
   //Http Options
   httpOptions = {
     headers: new HttpHeaders({

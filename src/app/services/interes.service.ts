@@ -8,7 +8,7 @@ import { retry, catchError } from 'rxjs/operators';
 })
 export class InteresService {
   constructor(private readonly http: HttpClient) {}
-  apiURL = 'http://localhost:8080/interest';
+  apiURL = 'https://node-apicv-service-emmannem.cloud.okteto.net/interest';
 
   //http opcions
 
