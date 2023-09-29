@@ -9,8 +9,7 @@ import { BehaviorSubject } from 'rxjs';
 })
 export class WorkExperienceService {
   constructor(private http: HttpClient) {}
-  apiURL =
-    'https://node-apicv-service-emmannem.cloud.okteto.net/work-experience';
+  apiURL = 'http://localhost:8080/work-experience';
   //Http Options
   httpOptions = {
     headers: new HttpHeaders({
