@@ -1,0 +1,26 @@
+.cv-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.cv-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.component-container {
+  flex-basis: calc(50% - 20px);
+  margin: 10px;
+  box-sizing: border-box;
+}
+
+.column-container {
+  display: flex;
+  flex-direction: column; /* Establece la dirección de los elementos a una columna */
+}
